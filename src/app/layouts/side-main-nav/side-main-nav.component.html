@@ -1,0 +1,33 @@
+<mat-toolbar color="primary">
+  <button mat-icon-button (click)="sidenav.toggle()" class="menu-button" fxHide fxShow.lt-md>
+    <mat-icon>menu</mat-icon>
+  </button>
+  <span [ngClass]="{ 'hidden': opened ? false : true }">SideNav</span>
+  <span>
+  </span>
+  <span class="head-menu"></span>
+  <div class="row">
+    <button mat-button (click)="signout()">
+      <mat-icon>logout</mat-icon> Sign Out
+    </button>
+  </div>
+</mat-toolbar>
+<mat-sidenav-container>
+  <mat-sidenav #sidenav [mode]="opened === false ? 'over' : 'side'" [opened]="opened === true">
+    <mat-nav-list>
+      <div style="text-align: center;">
+        <img class="avatar mat-elevation-z8" src="assets/images/profile.jpg" />
+
+        <h4 class="name text-responsive">John Doe</h4>
+        <p class="designation">Admin</p>
+
+        <mat-divider></mat-divider>
+      </div>
+      <!-- Here we are using menu-list-item -->
+      <app-menu-list-item *ngFor="let item of menu" [item]="item"></app-menu-list-item>
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>

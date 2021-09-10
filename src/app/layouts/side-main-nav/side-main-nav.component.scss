@@ -1,0 +1,242 @@
+mat-sidenav-container,
+mat-sidenav-content,
+mat-sidenav {
+  /* Using 100vh causes double scrollbars to appear on some devices */
+  height: 90vh;
+}
+
+.avatar {
+  margin-top: 16px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.name {
+  margin-top: 8px;
+  font-weight: normal;
+}
+
+.designation {
+  margin-top: 2px;
+  font-size: 0.7rem;
+  color: lightgrey;
+}
+
+mat-divider {
+  margin-top: 16px;
+  margin-bottom: 16px;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+mat-sidenav-container {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #808080;
+}
+
+body {
+  font-family: "Times New Roman", Times, serif !important;
+}
+
+.mat-toolbar.mat-primary {
+  background: var(--background-primary-color);
+  color: var(--highlighted-font-color);
+  font-family: "Times New Roman", Times, serif !important;
+}
+
+.display-block {
+  display: block;
+}
+
+.display-none {
+  display: none;
+}
+
+.mat-sidenav {
+  width: 220px;
+  display: flex;
+}
+
+button.menu-button {
+  color: inherit;
+  background: transparent;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+.sidenav-container {
+  height: 100%;
+}
+
+
+.sidenav {
+  width: 230px;
+}
+
+.sidenav .mat-toolbar {
+  background: inherit;
+}
+
+.mat-toolbar.mat-primary {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.head-menu {
+  flex: 1 1 auto;
+}
+
+.hidden {
+  display: none;
+}
+
+.menu-icon {
+  padding-right: 10px;
+}
+
+::ng-deep button.mat-menu-item {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+  outline: 0;
+  border: none;
+  -webkit-tap-highlight-color: transparent;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: block;
+  /** set line height to desired height */
+  line-height: 18px;
+  /** set height to auto */
+  height: auto;
+  padding: 0 16px;
+  text-align: left;
+  text-decoration: none;
+  max-width: 100%;
+  position: relative;
+}
+
+::ng-deep div.mat-menu-panel {
+  min-width: 112px;
+    /** set width to 500px */
+  max-width: 500px;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  max-height: calc(100vh - 48px);
+  border-radius: 4px;
+  outline: 0;
+}
+
+.user-name {
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+hr {
+  color: black;
+  margin-top: 0px;
+}
+
+.white-space-normal {
+  white-space: normal;
+}
+
+.padding-bottom-10 {
+  padding-bottom: 10px !important;
+}
+
+.profile-block-container {
+  padding-left: 15px !important;
+  padding-right: 15px !important;
+}
+
+.padding-top-10 {
+  padding-top: 10px;
+}
+
+.profile-block {
+  padding-left: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-top: 25px;
+}
+
+.logout-button {
+  padding: 15px;
+  font-size: 20px;
+}
+
+.padding-left-10 {
+  padding-left: 10px;
+}
+
+.notification-icon {
+  font-size: 20px;
+}
+
+.notification-header {
+  white-space: normal;
+  padding: 15px;
+  font-size: 20px;
+}
+
+.notification-item-container {
+  padding-left: 15px !important;
+  padding-right: 15px !important;
+}
+
+.notification-content {
+  padding-left: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.action-button {
+  padding: 10px;
+  margin-right: 15px;
+}
+
+.title-center {
+  flex: 1 1 auto;
+  text-align: center;
+}
+
+/* Large devices (desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .mat-sidenav {
+    width: 250px;
+  }
+
+  /*1rem = 16px*/
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .mat-sidenav {
+    width: 300px;
+  }
+
+  /*1rem = 16px*/
+}
+
+@media only screen and (min-width: 1400px) {
+  .mat-sidenav {
+    width: 400px;
+  }
+
+  /*1rem = 16px*/
+}
+
+@media only screen and (min-width: 1600px) {
+  .mat-sidenav {
+    width: 500px;
+  }
+
+  /*1rem = 16px*/
+}
+
+

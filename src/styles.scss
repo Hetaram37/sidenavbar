@@ -1,0 +1,138 @@
+/* You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file, and also import other style files */
+
+* {
+  font-family: "Times New Roman", Times, serif;
+}
+
+::ng-deep .material-icons{
+  font-family: 'Material Icons' !important;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: "Times New Roman", Times, serif !important;
+}
+
+.text-color {
+  color: #757575;
+}
+
+body {
+  margin: 0;
+}
+
+button:focus {
+  outline: 0 !important;
+  border: 0 !important;
+  box-shadow: none !important;
+}
+
+#div {
+  display: block !important;
+}
+
+.padd0 {
+  padding: 0px !important;
+}
+
+.margin0 {
+  margin: 0px !important;
+}
+
+.text-responsive {
+  font-size: x-large;
+  font-weight: normal;
+}
+
+.primary-text-color {
+  color: var(--background-primary-color) !important;
+}
+
+.small-primary-button {
+  background-color: var(--background-primary-color);
+  color: var(--highlighted-font-color);
+  border: none;
+  padding: 15px;
+  text-transform: uppercase;
+}
+
+.small-primary-button:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+@media only screen and (min-width: 144px) {
+  .text-responsive {
+    font-size: smaller;
+  }
+
+  /*1rem = 16px*/
+}
+
+@media only screen and (min-width: 544px) {
+  .text-responsive {
+    font-size: small;
+  }
+
+  /*1rem = 16px*/
+}
+
+@media only screen and (min-width: 644px) {
+  .text-responsive {
+    font-size: medium;
+  }
+
+  /*1rem = 16px*/
+}
+
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media only screen and (min-width: 768px) {
+  .text-responsive {
+    font-size: medium;
+  }
+
+  /*1rem = 16px*/
+}
+
+/* Large devices (desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .text-responsive {
+    font-size: large;
+  }
+
+  /*1rem = 16px*/
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .text-responsive {
+    font-size: large;
+  }
+
+  /*1rem = 16px*/
+}
+
+@media only screen and (min-width: 1400px) {
+  .text-responsive {
+    font-size: larger;
+  }
+
+  /*1rem = 16px*/
+}
+
+@media only screen and (min-width: 1800px) {
+  .text-responsive {
+    font-size: x-large;
+  }
+
+  /*1rem = 16px*/
+}
+
+@media only screen and (min-width: 2000px) {
+  .text-responsive {
+    font-size: xx-large;
+  }
+
+  /*1rem = 16px*/
+}
